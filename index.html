@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 class="text-center">Tic Tac Toe</h1>
+    <!-- SCOREBOARD -->
+    <section class="container">
+      <h5 hidden>.</h5>
+      <div class="row scoreboard justify-content-between">
+        <div class="playerScore text-center col-lg-5 col-md-5 col-4">
+          Player
+        </div>
+        <button
+          id="btnReset"
+          class="col-4 col-md-2 btn btn-outline-danger"
+          onClick="restartGame()"
+        >
+          RESTART
+        </button>
+        <div class="robotScore text-center col-lg-5 col-md-5 col-4">Robot</div>
+      </div>
+      <div class="row scoreboard">
+        <div
+          class="playerScore text-center col-lg-5 col-md-5 col-4"
+          id="player"
+        >
+          0
+        </div>
+        <div class="col"></div>
+        <div
+          class="robotScore text-center col-lg-5 col-md-5 col-4"
+          id="computer"
+        >
+          0
+        </div>
+      </div>
+    </section>
+    <!-- GRID -->
+    <section class="content mt-3">
+      <h5 hidden>.</h5>
+      <div class="container d-flex justify-content-center">
+        <table>
+          <tbody class="text-center">
+            <tr>
+              <td class="cell" id="0"></td>
+              <td class="cell" id="1"></td>
+              <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+              <td class="cell" id="3"></td>
+              <td class="cell" id="4"></td>
+              <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+              <td class="cell" id="6"></td>
+              <td class="cell" id="7"></td>
+              <td class="cell" id="8"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ENDGAME POP-UP -->
+      <div class="endgame">
+        <div class="text"></div>
+        <button
+          id="btnRestart"
+          class="btn btn-outline-light btn-lg"
+          onClick="startGame()"
+        >
+          AGAIN?
+        </button>
+      </div>
+    </section>
+    <script src="bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
