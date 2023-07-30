@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 body{
@@ -16,7 +17,6 @@ body{
 }
 
 .title{
-  font-family: 'Ubuntu', sans-serif;
   text-align: center;
   padding: 0 0.5rem;
   padding-bottom: 1.5rem;
