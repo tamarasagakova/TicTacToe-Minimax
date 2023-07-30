@@ -157,7 +157,7 @@ function disablePlayerMove() {
 // Function to update the scoreboard
 function updateScoreboard() {
     document.getElementById('player').innerText = playerScore;
-    document.getElementById('computer').innerText = aiScore;
+    document.getElementById('robot').innerText = aiScore;
 }
 
 // Function to restart the game
