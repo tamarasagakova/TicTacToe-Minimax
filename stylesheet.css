@@ -10,12 +10,14 @@ body{
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  background-color: rgb(255, 243, 216);
 }
 
 .title{
   text-align: center;
   padding: 0 0.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  font-size: 50px;
 }
 
 /* START -- Scoreboard */
@@ -29,9 +31,9 @@ body{
 
 .btnRestart {
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(255, 243, 216);
   border-radius: 12px;
-  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .15) 0 6px 20px;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-flex;
@@ -52,7 +54,7 @@ body{
 }
 
 .btnRestart:hover {
-  box-shadow: #f56565 0 0 0 2px, transparent 0 0 0 0;
+  box-shadow: #f93d3d 0 0 0 2px, transparent 0 0 0 0;
 }
 
 .scores{
@@ -75,12 +77,12 @@ table {
 }
 
 td.cell {
-  width: 100px;
-  height: 100px;
+  width: 8rem;
+  height: 8rem;
   text-align: center;
   font-size: 48px;
   font-weight: bold;
-  border: 2px solid #f56565;
+  border: 4px solid #f93d3d;
   cursor: pointer;
 }
 /* END -- Grid */
