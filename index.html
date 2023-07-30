@@ -18,7 +18,7 @@
       <div class="playerScore">
         Player
       </div>
-      <button id="btnReset" class="btnReset" onClick="restartGame()">
+      <button id="btnRestart" class="btnRestart" onClick="restartGame()">
         RESTART
       </button>
       <div class="robotScore">Robot</div>
@@ -55,14 +55,16 @@
     </div>
     <!-- END -- grid -->
 
-    <!-- ENDGAME POP-UP -->
+    <!-- START -- endgame pop-up -->
     <div class="endgame">
       <div class="text"></div>
-      <button id="btnRestart" class="btn btn-outline-light btn-lg" onClick="startGame()">
-        AGAIN?
+      <button id="btnAgain" class="btnAgain" onClick="startGame()">
+        Try again?
       </button>
     </div>
   </section>
+  <!-- END -- endgame pop-up -->
+  
   <script src="script.js"></script>
 </body>
 
