@@ -1,4 +1,4 @@
-# Tic Tac Toe
+# Tic-Tac-Toe
 
 ### Summary:
 Tic Tac Toe is a classic two-player board game played on a 3x3 grid. The players take turns placing their respective symbols, 'X' and 'O', on the grid. The objective is to form a straight line of three symbols (horizontally, vertically, or diagonally) before the opponent does. If the entire grid is filled without a winner, the game ends in a draw.
