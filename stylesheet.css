@@ -28,11 +28,12 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7rem;
+  gap: 5rem;
   padding-bottom: 0.3rem;
 }
 
-.btnRestart {
+.btnScoreboard1,
+.btnScoreboard2 {
   align-items: center;
   background-color: rgb(255, 243, 216);
   border-radius: 12px;
@@ -56,15 +57,20 @@ body{
   touch-action: manipulation;
 }
 
-.btnRestart:hover {
+.btnScoreboard1:hover,
+.btnScoreboard2:hover {
   box-shadow: #f93d3d 0 0 0 2px, transparent 0 0 0 0;
+}
+
+.btnScoreboard1{
+  margin-right: 0.5em;
 }
 
 .scores{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 22rem;
+  gap: 27rem;
 }
 /* END -- Scoreboard */
 
@@ -90,6 +96,7 @@ td.cell {
 }
 /* END -- Grid */
 
+/* START -- End game pop-up */
 .endgame {
   position: fixed;
   top: 0;
@@ -111,6 +118,37 @@ td.cell {
   margin-bottom: 20px;
 }
 
-#btnAgain {
-  margin-top: 10px;
+.btnAgain {
+  background: #f93d3d;
+  border: 2px solid #f93d3d;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
 }
+
+.btnAgain:hover,
+.btnAgain:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: white;
+}
+
+.btnAgain:active {
+  opacity: .5;
+}
+/* END -- End game pop-up */
