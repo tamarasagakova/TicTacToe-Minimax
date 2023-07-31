@@ -222,5 +222,15 @@ function hideEndGamePopup() {
 // Add event listener for the restart button
 document.getElementById('btnRestart').addEventListener('click', restartGame);
 
+// Function to reset the scores
+function resetScores() {
+    playerScore = 0;
+    aiScore = 0;
+    updateScoreboard();
+  }
+  
+  // Add event listener for the reset scores button
+  document.getElementById('btnResetScores').addEventListener('click', resetScores);
+
 // Start the game
 startGame();
