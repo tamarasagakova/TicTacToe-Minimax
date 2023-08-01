@@ -23,7 +23,7 @@ function handlePlayerMove(index) {
                 handleAIMove();
             }, 500);
         }
-        else if (isGameOver(board)){
+        else if (isGameOver(board)) {
             showEndGamePopup();
         }
     }
@@ -227,10 +227,10 @@ function resetScores() {
     playerScore = 0;
     aiScore = 0;
     updateScoreboard();
-  }
-  
-  // Add event listener for the reset scores button
-  document.getElementById('btnResetScores').addEventListener('click', resetScores);
+}
+
+// Add event listener for the reset scores button
+document.getElementById('btnResetScores').addEventListener('click', resetScores);
 
 // Start the game
 startGame();
