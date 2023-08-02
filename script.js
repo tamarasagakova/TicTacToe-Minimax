@@ -232,7 +232,7 @@ function resetScores() {
 document.getElementById('btnResetScores').addEventListener('click', resetScores);
 
 // Add event listener for the toggle dark mode button
-document.getElementById('btnToggleDarkMode').addEventListener('click', toggleDarkMode);
+document.getElementById('theme-switch').addEventListener('click', toggleDarkMode);
 
 // Function to toggle dark mode
 function toggleDarkMode() {
