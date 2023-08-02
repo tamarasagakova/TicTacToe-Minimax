@@ -1,0 +1,25 @@
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.scoreboard.dark-mode {
+    background-color: #212121;
+}
+
+.playerScore.dark-mode,
+.robotScore.dark-mode {
+    color: #ffffff;
+}
+
+.cell.dark-mode {
+    background-color: #424242;
+    color: #ffffff;
+}
+
+.btnScoreboard1.dark-mode,
+.btnScoreboard2.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
