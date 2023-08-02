@@ -212,7 +212,6 @@ function showEndGamePopup() {
 }
 
 
-
 // Function to hide the endgame pop-up
 function hideEndGamePopup() {
     const endgamePopup = document.querySelector('.endgame');
