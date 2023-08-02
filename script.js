@@ -231,5 +231,23 @@ function resetScores() {
 // Add event listener for the reset scores button
 document.getElementById('btnResetScores').addEventListener('click', resetScores);
 
+// Add event listener for the toggle dark mode button
+document.getElementById('btnToggleDarkMode').addEventListener('click', toggleDarkMode);
+
+// Function to toggle dark mode
+function toggleDarkMode() {
+    const body = document.body;
+    const darkModeStylesheet = document.getElementById('dark-mode-stylesheet');
+    
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        darkModeStylesheet.disabled = true;
+    } else {
+        body.classList.add('dark-mode');
+        darkModeStylesheet.disabled = false;
+    }
+}
+
+
 // Start the game
 startGame();
