@@ -16,6 +16,59 @@ body {
   background-color: rgb(255, 243, 216);
 }
 
+.switch-container{
+  position: absolute;
+  top: 10px;
+  right: 10px
+}
+
+.switch {
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  position: relative;
+  background-color: #ccc;
+  border-radius: 17px;
+  transition: background-color 0.3s ease;
+}
+
+.switch:before,
+.switch:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.switch:before {
+  left: 2px;
+  background-color: #fff;
+}
+
+.switch:after {
+  right: 2px;
+  background-color: #000;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked + .switch:before {
+  transform: translateX(26px);
+}
+
+input[type="checkbox"]:checked + .switch:after {
+  transform: translateX(-26px);
+}
+
+input[type="checkbox"]:checked + .switch {
+  background-color: #6e6e6e;
+}
+
 .title {
   text-align: center;
   padding: 0 0.5rem;
