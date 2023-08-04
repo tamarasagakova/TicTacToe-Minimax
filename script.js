@@ -242,12 +242,25 @@ function toggleDarkMode() {
     if (body.classList.contains('dark-mode')) {
         body.classList.remove('dark-mode');
         darkModeStylesheet.disabled = true;
+        // Save dark mode preference to local storage
+        localStorage.setItem('darkMode', 'off');
     } else {
         body.classList.add('dark-mode');
         darkModeStylesheet.disabled = false;
+        // Save dark mode preference to local storage
+        localStorage.setItem('darkMode', 'on');
     }
 }
 
+// Function to check and apply dark mode preference from local storage
+function checkDarkModePreference() {
+    const darkModePreference = localStorage.getItem('darkMode');
+    if (darkModePreference === 'on') {
+        toggleDarkMode();
+    }
+}
+
+checkDarkModePreference();
 
 // Start the game
 startGame();
