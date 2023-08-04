@@ -21,7 +21,7 @@ body.dark-mode {
 
 body.dark-mode .btnScoreboard1,
 body.dark-mode .btnScoreboard2 {
-    box-shadow: transparent 0 0 0 2px, rgb(255, 255, 255) 0 3px 10px;
+    box-shadow: transparent 0 0 0 2px, rgb(255, 255, 255) 0 2px 7px;
     background-color: rgb(9, 9, 9);
     color: white;
 }
