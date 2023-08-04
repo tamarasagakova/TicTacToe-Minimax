@@ -18,8 +18,15 @@ body.dark-mode {
     color: #ffffff;
 }
 
-.btnScoreboard1.dark-mode,
-.btnScoreboard2.dark-mode {
-    box-shadow: transparent 0 0 0 3px, rgb(255, 255, 255) 0 6px 20px;
+
+body.dark-mode .btnScoreboard1,
+body.dark-mode .btnScoreboard2 {
+    box-shadow: transparent 0 0 0 2px, rgb(255, 255, 255) 0 3px 10px;
     background-color: rgb(9, 9, 9);
+    color: white;
+}
+
+body.dark-mode .btnScoreboard1:hover,
+body.dark-mode .btnScoreboard2:hover {
+    box-shadow: #f93d3d 0 0 0 2px, transparent 0 0 0 0;
 }
